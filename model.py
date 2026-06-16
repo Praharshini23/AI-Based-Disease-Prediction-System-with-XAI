@@ -22,3 +22,9 @@ accuracy = accuracy_score(y_test, predictions)
 
 print("Accuracy:", accuracy)
 
+sample = X_train.iloc[0].copy()
+
+prediction = model.predict([sample])
+
+print("Predicted Disease:", prediction[0])
+
